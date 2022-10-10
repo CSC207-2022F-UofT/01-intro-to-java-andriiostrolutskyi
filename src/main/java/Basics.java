@@ -145,10 +145,14 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
-        for (String s : to_split.split(" ")) {
-            ret.append(s.charAt(0));
-        }
-        System.out.println(ret.toString());
+        char c[] = to_slit.toCharArray();
+        for (int i=0; i < to_split.length; i++) {
+         // Logic to implement first character of each word in a string
+         if(c[i] != ' ' && (i == 0 || c[i-1] == ' ')) {
+            ret.append(c[i]);
+         }
+      }
+
         return ret.toString();
     }
 
