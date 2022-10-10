@@ -99,9 +99,9 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-          for (int i = 10; i => 1; i--){
-         *            System.out.println("Current count: " + i);
-         *        }
+          for (int i = 10; i >= 1; i--) {
+                System.out.println("Current count: " + i);
+          }
             
     }
 
@@ -143,10 +143,10 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        
+
         // Fill in the rest of the body here
-        for (String s : fullname.split(" ")) {
-            initials.append(s.charAt(0));
+        for (String s : to_split.split(" ")) {
+            ret.append(s.charAt(0));
         }
         System.out.println(ret.toString());
         return ret.toString();
